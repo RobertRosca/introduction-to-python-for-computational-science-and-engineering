@@ -1050,10 +1050,10 @@ $<span class="math notranslate nohighlight">\(f(x,\vec{p}) = a \exp(-b x) + c, \
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Optimal parameters are a=2.49473, b=1.26198, and c=0.494935
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Optimal parameters are a=2.4836, b=1.45461, and c=0.580315
 </pre></div>
 </div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f39b977aeb0&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f23bb6424c0&gt;
 </pre></div>
 </div>
 <img alt="_images/16-scipy_29_2.png" src="_images/16-scipy_29_2.png" />
@@ -1180,6 +1180,12 @@ $<span class="math notranslate nohighlight">\(f(x,\vec{p}) = a \exp(-b x) + c, \
 </div>
 </div>
 <div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;ipython-input-11-127f35e01b3a&gt;:6: DeprecationWarning: scipy.cos is deprecated and will be removed in SciPy 2.0.0, use numpy.cos instead
+  return cos(x) - 3 * exp( -(x - 0.2) ** 2)
+&lt;ipython-input-11-127f35e01b3a&gt;:6: DeprecationWarning: scipy.exp is deprecated and will be removed in SciPy 2.0.0, use numpy.exp instead
+  return cos(x) - 3 * exp( -(x - 0.2) ** 2)
+</pre></div>
+</div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Optimization terminated successfully.
          Current function value: -2.023866
          Iterations: 16
@@ -1192,11 +1198,7 @@ Optimization terminated successfully.
 Start search at x=2., minimum is [3.13847656]
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;ipython-input-11-127f35e01b3a&gt;:6: DeprecationWarning: scipy.cos is deprecated and will be removed in SciPy 2.0.0, use numpy.cos instead
-  return cos(x) - 3 * exp( -(x - 0.2) ** 2)
-&lt;ipython-input-11-127f35e01b3a&gt;:6: DeprecationWarning: scipy.exp is deprecated and will be removed in SciPy 2.0.0, use numpy.exp instead
-  return cos(x) - 3 * exp( -(x - 0.2) ** 2)
-&lt;ipython-input-11-127f35e01b3a&gt;:16: DeprecationWarning: scipy.arange is deprecated and will be removed in SciPy 2.0.0, use numpy.arange instead
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;ipython-input-11-127f35e01b3a&gt;:16: DeprecationWarning: scipy.arange is deprecated and will be removed in SciPy 2.0.0, use numpy.arange instead
   x = arange(-10, 10, 0.1)
 &lt;ipython-input-11-127f35e01b3a&gt;:6: DeprecationWarning: scipy.cos is deprecated and will be removed in SciPy 2.0.0, use numpy.cos instead
   return cos(x) - 3 * exp( -(x - 0.2) ** 2)
@@ -1212,10 +1214,10 @@ Start search at x=2., minimum is [3.13847656]
   return cos(x) - 3 * exp( -(x - 0.2) ** 2)
 </pre></div>
 </div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f39b9618c70&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f23bb4f3370&gt;
 </pre></div>
 </div>
-<img alt="_images/16-scipy_35_3.png" src="_images/16-scipy_35_3.png" />
+<img alt="_images/16-scipy_35_4.png" src="_images/16-scipy_35_4.png" />
 </div>
 </div>
 <p>Calling the <code class="docutils literal notranslate"><span class="pre">fmin</span></code> function will produce some diagnostic output, which you can also see above.</p>
