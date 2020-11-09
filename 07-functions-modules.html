@@ -337,32 +337,11 @@ commentsRunWhenDOMLoaded(addUtterances);
   <a class="reference internal nav-link" href="#using-functions">
    7.2. Using functions
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#common-confusion-about-printing-and-returning-values">
-     7.2.1. Common confusion about printing and returning values
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#further-information">
-       7.2.1.1. Further information
-      </a>
-     </li>
-    </ul>
-   </li>
-  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#defining-functions">
    7.3. Defining functions
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#further-reading">
-     7.3.1. Further reading
-    </a>
-   </li>
-  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#default-values-and-optional-parameters">
@@ -398,15 +377,13 @@ commentsRunWhenDOMLoaded(addUtterances);
     <a class="reference internal nav-link" href="#example-2">
      7.5.5. Example 2
     </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id1">
-       7.5.5.1. Further Reading
-      </a>
-     </li>
-    </ul>
    </li>
   </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#further-reading">
+   7.6. Further Reading
+  </a>
  </li>
 </ul>
 
@@ -448,8 +425,7 @@ commentsRunWhenDOMLoaded(addUtterances);
 <p>The value we pass to the function <code class="docutils literal notranslate"><span class="pre">sqrt</span></code> is 4 in this example. This value is called the <em>argument</em> of the function. A function may have more than one argument.</p>
 <p>The function returns the value 2.0 (the result of its computation) to the “calling context”. This value is called the <em>return value</em> of the function.</p>
 <p>It is common to say that a function <em>takes</em> an argument and <em>returns</em> a result or return value.</p>
-<div class="section" id="common-confusion-about-printing-and-returning-values">
-<h3><span class="section-number">7.2.1. </span>Common confusion about printing and returning values<a class="headerlink" href="#common-confusion-about-printing-and-returning-values" title="Permalink to this headline">¶</a></h3>
+<p><strong>Common confusion about printing and returning values</strong></p>
 <p>It is a common beginner’s mistake to confuse the <em>printing</em> of values with <em>returning</em> values. In the following example it is hard to see whether the function <code class="docutils literal notranslate"><span class="pre">math.sin</span></code> returns a value or whether it prints the value:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -482,13 +458,10 @@ commentsRunWhenDOMLoaded(addUtterances);
 <p>The return value of the function call <code class="docutils literal notranslate"><span class="pre">math.sin(2)</span></code> is assigned to the variable <code class="docutils literal notranslate"><span class="pre">x</span></code>, and <code class="docutils literal notranslate"><span class="pre">x</span></code> is printed in the next line.</p>
 <p>Generally, functions should execute “silently” (i.e. not print anything) and report the result of their computation through the return value.</p>
 <p>Part of the confusion about printed versus return values at the Python prompt comes from the Python prompt printing (a representation) of returned objects <em>if</em> the returned objects are not assigned. Generally, seeing the returned objects is exactly what we want (as we normally care about the returned object), just when learning Python this may cause mild confusion about functions returning values or printing values.</p>
-<div class="section" id="further-information">
-<h4><span class="section-number">7.2.1.1. </span>Further information<a class="headerlink" href="#further-information" title="Permalink to this headline">¶</a></h4>
+<p><strong>Further information</strong></p>
 <ul class="simple">
 <li><p>Think Python has a gentle introduction to functions (on which the previous paragraph is based) in <a class="reference external" href="http://www.greenteapress.com/thinkpython/html/book004.html">chapter 3 (Functions)</a> and <a class="reference external" href="http://www.greenteapress.com/thinkpython/html/book007.html">chapter 6 (Fruitful functions)</a>.</p></li>
 </ul>
-</div>
-</div>
 </div>
 <div class="section" id="defining-functions">
 <h2><span class="section-number">7.3. </span>Defining functions<a class="headerlink" href="#defining-functions" title="Permalink to this headline">¶</a></h2>
@@ -649,12 +622,10 @@ commentsRunWhenDOMLoaded(addUtterances);
 </div>
 </div>
 </div>
-<div class="section" id="further-reading">
-<h3><span class="section-number">7.3.1. </span>Further reading<a class="headerlink" href="#further-reading" title="Permalink to this headline">¶</a></h3>
+<p><strong>Further reading</strong></p>
 <ul class="simple">
 <li><p><a class="reference external" href="http://docs.python.org/tutorial/controlflow.html#defining-functions">Python Tutorial: Section 4.6 Defining Functions</a></p></li>
 </ul>
-</div>
 </div>
 <div class="section" id="default-values-and-optional-parameters">
 <h2><span class="section-number">7.4. </span>Default values and optional parameters<a class="headerlink" href="#default-values-and-optional-parameters" title="Permalink to this headline">¶</a></h2>
@@ -916,13 +887,13 @@ The unitvector in direction of [0 1 2] is [0.         0.4472136  0.89442719].
 </div>
 <p>but either of the last two options is good.</p>
 <p>The example in <a class="reference external" href="#Many-ways-to-compute-a-series">Many ways to compute a series</a> demonstrates this technique. Including functions with names starting with <code class="docutils literal notranslate"><span class="pre">test_</span></code> is compatible with the very useful py.test regression testing framework (see <a class="reference external" href="http://pytest.org/">http://pytest.org/</a>).</p>
-<div class="section" id="id1">
-<h4><span class="section-number">7.5.5.1. </span>Further Reading<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h4>
+</div>
+</div>
+<div class="section" id="further-reading">
+<h2><span class="section-number">7.6. </span>Further Reading<a class="headerlink" href="#further-reading" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="http://docs.python.org/tutorial/modules.html#modules">Python Tutorial Section 6</a></p></li>
 </ul>
-</div>
-</div>
 </div>
 </div>
 

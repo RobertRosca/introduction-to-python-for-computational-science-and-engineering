@@ -419,18 +419,6 @@ commentsRunWhenDOMLoaded(addUtterances);
   <a class="reference internal nav-link" href="#optimisation">
    16.9. Optimisation
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#return-value-of-fmin">
-     16.9.1. Return value of
-     <code class="docutils literal notranslate">
-      <span class="pre">
-       fmin
-      </span>
-     </code>
-    </a>
-   </li>
-  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#other-numerical-methods">
@@ -659,8 +647,8 @@ $<span class="math notranslate nohighlight">\(\frac{\mathrm{d}y}{\mathrm{d}t}(t)
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">set_matplotlib_formats</span>
-<span class="o">%</span><span class="k">matplotlib</span> inline
 <span class="n">set_matplotlib_formats</span><span class="p">(</span><span class="s1">&#39;svg&#39;</span><span class="p">)</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
 <span class="kn">from</span> <span class="nn">scipy.integrate</span> <span class="kn">import</span> <span class="n">odeint</span>
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">N</span>
 
@@ -687,7 +675,8 @@ $<span class="math notranslate nohighlight">\(\frac{\mathrm{d}y}{\mathrm{d}t}(t)
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Text(0, 0.5, &#39;y(t)&#39;)
 </pre></div>
 </div>
-<img alt="_images/16-scipy_16_1.svg" src="_images/16-scipy_16_1.svg" /></div>
+<img alt="_images/16-scipy_16_1.png" src="_images/16-scipy_16_1.png" />
+</div>
 </div>
 <p>The <code class="docutils literal notranslate"><span class="pre">odeint</span></code> command takes a number of optional parameters to change the default error tolerance of the integration (and to trigger the production of extra debugging output). Use the help command to explore these:</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">help</span><span class="p">(</span><span class="n">scipy</span><span class="o">.</span><span class="n">integrate</span><span class="o">.</span><span class="n">odeint</span><span class="p">)</span>
@@ -1014,7 +1003,8 @@ The exact error is -6.66134e-15.
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Text(0.5, 0, &#39;x&#39;)
 </pre></div>
 </div>
-<img alt="_images/16-scipy_27_1.svg" src="_images/16-scipy_27_1.svg" /></div>
+<img alt="_images/16-scipy_27_1.png" src="_images/16-scipy_27_1.png" />
+</div>
 </div>
 </div>
 <div class="section" id="curve-fitting">
@@ -1060,13 +1050,14 @@ $<span class="math notranslate nohighlight">\(f(x,\vec{p}) = a \exp(-b x) + c, \
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Optimal parameters are a=2.29813, b=1.28381, and c=0.561212
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Optimal parameters are a=2.42779, b=1.15642, and c=0.493172
 </pre></div>
 </div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f8e2e176a00&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f0c1107aa30&gt;
 </pre></div>
 </div>
-<img alt="_images/16-scipy_29_2.svg" src="_images/16-scipy_29_2.svg" /></div>
+<img alt="_images/16-scipy_29_2.png" src="_images/16-scipy_29_2.png" />
+</div>
 </div>
 <p>Note that in the source code above we define the fitting function <span class="math notranslate nohighlight">\(y = f(x)\)</span> through Python code. We can thus fit (nearly) arbitrary functions using the <code class="docutils literal notranslate"><span class="pre">curve_fit</span></code> method.</p>
 <p>The <code class="docutils literal notranslate"><span class="pre">curve_fit</span></code> function returns a tuple <code class="docutils literal notranslate"><span class="pre">popt,</span> <span class="pre">pcov</span></code>. The first entry <code class="docutils literal notranslate"><span class="pre">popt</span></code> contains a tuple of the OPTimal Parameters (in the sense that these minimise equation ([eq:1]). The second entry contains the covariance matrix for all parameters. The diagonals provide the variance of the parameter estimations.</p>
@@ -1138,7 +1129,8 @@ $<span class="math notranslate nohighlight">\(f(x,\vec{p}) = a \exp(-b x) + c, \
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Text(0, 0.5, &#39;abs(DFT(signal))&#39;)
 </pre></div>
 </div>
-<img alt="_images/16-scipy_32_2.svg" src="_images/16-scipy_32_2.svg" /></div>
+<img alt="_images/16-scipy_32_2.png" src="_images/16-scipy_32_2.png" />
+</div>
 </div>
 <p>The lower plot shows the discrete Fourier transform computed from the data shown in the upper plot.</p>
 </div>
@@ -1188,6 +1180,12 @@ $<span class="math notranslate nohighlight">\(f(x,\vec{p}) = a \exp(-b x) + c, \
 </div>
 </div>
 <div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;ipython-input-11-127f35e01b3a&gt;:6: DeprecationWarning: scipy.cos is deprecated and will be removed in SciPy 2.0.0, use numpy.cos instead
+  return cos(x) - 3 * exp( -(x - 0.2) ** 2)
+&lt;ipython-input-11-127f35e01b3a&gt;:6: DeprecationWarning: scipy.exp is deprecated and will be removed in SciPy 2.0.0, use numpy.exp instead
+  return cos(x) - 3 * exp( -(x - 0.2) ** 2)
+</pre></div>
+</div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Optimization terminated successfully.
          Current function value: -2.023866
          Iterations: 16
@@ -1200,11 +1198,7 @@ Optimization terminated successfully.
 Start search at x=2., minimum is [3.13847656]
 </pre></div>
 </div>
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;ipython-input-11-127f35e01b3a&gt;:6: DeprecationWarning: scipy.cos is deprecated and will be removed in SciPy 2.0.0, use numpy.cos instead
-  return cos(x) - 3 * exp( -(x - 0.2) ** 2)
-&lt;ipython-input-11-127f35e01b3a&gt;:6: DeprecationWarning: scipy.exp is deprecated and will be removed in SciPy 2.0.0, use numpy.exp instead
-  return cos(x) - 3 * exp( -(x - 0.2) ** 2)
-&lt;ipython-input-11-127f35e01b3a&gt;:16: DeprecationWarning: scipy.arange is deprecated and will be removed in SciPy 2.0.0, use numpy.arange instead
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;ipython-input-11-127f35e01b3a&gt;:16: DeprecationWarning: scipy.arange is deprecated and will be removed in SciPy 2.0.0, use numpy.arange instead
   x = arange(-10, 10, 0.1)
 &lt;ipython-input-11-127f35e01b3a&gt;:6: DeprecationWarning: scipy.cos is deprecated and will be removed in SciPy 2.0.0, use numpy.cos instead
   return cos(x) - 3 * exp( -(x - 0.2) ** 2)
@@ -1220,16 +1214,15 @@ Start search at x=2., minimum is [3.13847656]
   return cos(x) - 3 * exp( -(x - 0.2) ** 2)
 </pre></div>
 </div>
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f8e2df8f670&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f0c10efacd0&gt;
 </pre></div>
 </div>
-<img alt="_images/16-scipy_35_3.svg" src="_images/16-scipy_35_3.svg" /></div>
+<img alt="_images/16-scipy_35_4.png" src="_images/16-scipy_35_4.png" />
+</div>
 </div>
 <p>Calling the <code class="docutils literal notranslate"><span class="pre">fmin</span></code> function will produce some diagnostic output, which you can also see above.</p>
-<div class="section" id="return-value-of-fmin">
-<h3><span class="section-number">16.9.1. </span>Return value of <code class="docutils literal notranslate"><span class="pre">fmin</span></code><a class="headerlink" href="#return-value-of-fmin" title="Permalink to this headline">¶</a></h3>
+<p><strong>Return value of <code class="docutils literal notranslate"><span class="pre">fmin</span></code></strong></p>
 <p>Note that the return value from the <code class="docutils literal notranslate"><span class="pre">fmin</span></code> function is a numpy <code class="docutils literal notranslate"><span class="pre">array</span></code> which – for the example above – contains only one number as we have only one parameter (here <em>x</em>) to vary. In general, <code class="docutils literal notranslate"><span class="pre">fmin</span></code> can be used to find the minimum in a higher-dimensional parameter space if there are several parameters. In that case, the numpy array would contain those parameters that minimise the objective function. The objective function <span class="math notranslate nohighlight">\(f(x)\)</span> has to return a scalar even if there are more parameters, i.e. even if <span class="math notranslate nohighlight">\(x\)</span> is a vector as in <span class="math notranslate nohighlight">\(f(\mathbf{x})\)</span>.</p>
-</div>
 </div>
 <div class="section" id="other-numerical-methods">
 <h2><span class="section-number">16.10. </span>Other numerical methods<a class="headerlink" href="#other-numerical-methods" title="Permalink to this headline">¶</a></h2>

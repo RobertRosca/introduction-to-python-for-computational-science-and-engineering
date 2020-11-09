@@ -419,7 +419,7 @@ commentsRunWhenDOMLoaded(addUtterances);
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sympy</span>
-<span class="n">sympy</span><span class="o">.</span><span class="n">init_printing</span><span class="p">()</span>
+<span class="n">sympy</span><span class="o">.</span><span class="n">init_printing</span><span class="p">(</span><span class="n">use_latex</span><span class="o">=</span><span class="s1">&#39;mathjax&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -450,7 +450,8 @@ commentsRunWhenDOMLoaded(addUtterances);
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/12-symbolic-computation_4_0.png" src="_images/12-symbolic-computation_4_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle x\]</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -460,7 +461,8 @@ commentsRunWhenDOMLoaded(addUtterances);
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/12-symbolic-computation_5_0.png" src="_images/12-symbolic-computation_5_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle 2 x + 11 y\]</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -470,7 +472,8 @@ commentsRunWhenDOMLoaded(addUtterances);
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/12-symbolic-computation_6_0.png" src="_images/12-symbolic-computation_6_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle x + 10\]</div>
 </div>
 </div>
 <p>We can abbreviate the creation of multiple symbolic variables using the <code class="docutils literal notranslate"><span class="pre">symbols</span></code> function. For example, to create the symbolic variables <code class="docutils literal notranslate"><span class="pre">x</span></code>, <code class="docutils literal notranslate"><span class="pre">y</span></code> and <code class="docutils literal notranslate"><span class="pre">z</span></code>, we can use</p>
@@ -483,7 +486,8 @@ commentsRunWhenDOMLoaded(addUtterances);
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/12-symbolic-computation_8_0.png" src="_images/12-symbolic-computation_8_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle 2 y + 3 z\]</div>
 </div>
 </div>
 <p>Once we have completed our term manipulation, we sometimes like to insert numbers for variables. This can be done using the <code class="docutils literal notranslate"><span class="pre">subs</span></code> method.</p>
@@ -496,7 +500,8 @@ commentsRunWhenDOMLoaded(addUtterances);
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/12-symbolic-computation_10_0.png" src="_images/12-symbolic-computation_10_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle x + 2 y\]</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -506,7 +511,8 @@ commentsRunWhenDOMLoaded(addUtterances);
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/12-symbolic-computation_11_0.png" src="_images/12-symbolic-computation_11_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle x + 2 y\]</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -516,7 +522,8 @@ commentsRunWhenDOMLoaded(addUtterances);
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/12-symbolic-computation_12_0.png" src="_images/12-symbolic-computation_12_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle 2 y + 10\]</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -526,7 +533,8 @@ commentsRunWhenDOMLoaded(addUtterances);
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/12-symbolic-computation_13_0.png" src="_images/12-symbolic-computation_13_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle 16\]</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -536,7 +544,8 @@ commentsRunWhenDOMLoaded(addUtterances);
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/12-symbolic-computation_14_0.png" src="_images/12-symbolic-computation_14_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle 16\]</div>
 </div>
 </div>
 <p>We can also substitute a symbolic variable for another one such as in this example where <code class="docutils literal notranslate"><span class="pre">y</span></code> is replaced with <code class="docutils literal notranslate"><span class="pre">x</span></code> before we substitute <code class="docutils literal notranslate"><span class="pre">x</span></code> with the number <code class="docutils literal notranslate"><span class="pre">2</span></code>.</p>
@@ -548,7 +557,8 @@ commentsRunWhenDOMLoaded(addUtterances);
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/12-symbolic-computation_16_0.png" src="_images/12-symbolic-computation_16_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle 3 x + y^{2}\]</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -558,7 +568,8 @@ commentsRunWhenDOMLoaded(addUtterances);
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/12-symbolic-computation_17_0.png" src="_images/12-symbolic-computation_17_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle y^{2} + 3 y\]</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -568,7 +579,8 @@ commentsRunWhenDOMLoaded(addUtterances);
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/12-symbolic-computation_18_0.png" src="_images/12-symbolic-computation_18_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle 10\]</div>
 </div>
 </div>
 <p>From this point onward, some of the code fragments and examples we present will assume that the required symbols have already been defined. If you try an example and SymPy gives a message like <code class="docutils literal notranslate"><span class="pre">NameError:</span> <span class="pre">name</span> <span class="pre">’x’</span> <span class="pre">is</span> <span class="pre">not</span> <span class="pre">defined</span></code> it is probably because you need to define the symbol using one of the methods above.</p>
@@ -611,7 +623,8 @@ In [1]:
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/12-symbolic-computation_23_0.png" src="_images/12-symbolic-computation_23_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle \frac{1}{10}\]</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -622,7 +635,8 @@ In [1]:
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/12-symbolic-computation_24_0.png" src="_images/12-symbolic-computation_24_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle \frac{45}{67}\]</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -632,7 +646,8 @@ In [1]:
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/12-symbolic-computation_25_0.png" src="_images/12-symbolic-computation_25_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle \frac{9}{134}\]</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -642,7 +657,8 @@ In [1]:
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/12-symbolic-computation_26_0.png" src="_images/12-symbolic-computation_26_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle - \frac{383}{670}\]</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -652,7 +668,8 @@ In [1]:
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/12-symbolic-computation_27_0.png" src="_images/12-symbolic-computation_27_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle \frac{517}{670}\]</div>
 </div>
 </div>
 <p>Note that the Rational class works with rational expressions <em>exactly</em>. This is in contrast to Python’s standard <code class="docutils literal notranslate"><span class="pre">float</span></code> data type which uses floating point representation to <em>approximate</em> (rational) numbers.</p>
@@ -665,7 +682,8 @@ In [1]:
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/12-symbolic-computation_29_0.png" src="_images/12-symbolic-computation_29_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle \frac{2}{3}\]</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -675,7 +693,8 @@ In [1]:
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/12-symbolic-computation_30_0.png" src="_images/12-symbolic-computation_30_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle 0.6666666666666666\]</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -685,7 +704,8 @@ In [1]:
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/12-symbolic-computation_31_0.png" src="_images/12-symbolic-computation_31_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle 0.666666666666667\]</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -695,7 +715,8 @@ In [1]:
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/12-symbolic-computation_32_0.png" src="_images/12-symbolic-computation_32_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle 0.66666666666666666666666666666666666666666666666667\]</div>
 </div>
 </div>
 </div>
@@ -712,7 +733,8 @@ In [1]:
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/12-symbolic-computation_34_0.png" src="_images/12-symbolic-computation_34_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle \cos{\left(x \right)}\]</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -722,7 +744,8 @@ In [1]:
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/12-symbolic-computation_35_0.png" src="_images/12-symbolic-computation_35_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle 0\]</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -732,7 +755,8 @@ In [1]:
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/12-symbolic-computation_36_0.png" src="_images/12-symbolic-computation_36_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle 9 x^{8} + 20 x + 3\]</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -742,7 +766,8 @@ In [1]:
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/12-symbolic-computation_37_0.png" src="_images/12-symbolic-computation_37_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle 4\]</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -752,7 +777,8 @@ In [1]:
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/12-symbolic-computation_38_0.png" src="_images/12-symbolic-computation_38_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle 32\]</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -762,7 +788,8 @@ In [1]:
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/12-symbolic-computation_39_0.png" src="_images/12-symbolic-computation_39_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle 263.66015625\]</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -772,7 +799,8 @@ In [1]:
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/12-symbolic-computation_40_0.png" src="_images/12-symbolic-computation_40_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle e^{x}\]</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -782,7 +810,8 @@ In [1]:
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/12-symbolic-computation_41_0.png" src="_images/12-symbolic-computation_41_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle - x e^{- \frac{x^{2}}{2}}\]</div>
 </div>
 </div>
 <p>The SymPy <code class="docutils literal notranslate"><span class="pre">diff()</span></code> function takes a minimum of two arguments: the function to be differentiated and the variable with respect to which the differentiation is performed. Higher derivatives may be calculated by specifying additional variables, or by adding an optional integer argument:</p>
@@ -793,7 +822,8 @@ In [1]:
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/12-symbolic-computation_43_0.png" src="_images/12-symbolic-computation_43_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle 12 x^{3}\]</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -803,7 +833,8 @@ In [1]:
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/12-symbolic-computation_44_0.png" src="_images/12-symbolic-computation_44_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle 72 x\]</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -813,7 +844,8 @@ In [1]:
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/12-symbolic-computation_45_0.png" src="_images/12-symbolic-computation_45_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle 72 x\]</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -823,7 +855,8 @@ In [1]:
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/12-symbolic-computation_46_0.png" src="_images/12-symbolic-computation_46_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle 1512 x^{2} y^{5}\]</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -833,7 +866,8 @@ In [1]:
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/12-symbolic-computation_47_0.png" src="_images/12-symbolic-computation_47_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle 1512 x^{2} y^{5}\]</div>
 </div>
 </div>
 <p>At times, SymPy may return a result in an unfamiliar form. If, for example, you wish to use SymPy to check that you differentiated something correctly, a technique that might be of use is to subtract the SymPy result from your result, and check that the answer is zero.</p>
@@ -879,7 +913,8 @@ In [1]:
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/12-symbolic-computation_52_0.png" src="_images/12-symbolic-computation_52_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle \frac{x^{3}}{3}\]</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -889,7 +924,8 @@ In [1]:
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/12-symbolic-computation_53_0.png" src="_images/12-symbolic-computation_53_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle x^{2} y\]</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -899,7 +935,8 @@ In [1]:
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/12-symbolic-computation_54_0.png" src="_images/12-symbolic-computation_54_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle y \sin{\left(x \right)}\]</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -909,7 +946,8 @@ In [1]:
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/12-symbolic-computation_55_0.png" src="_images/12-symbolic-computation_55_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle - \cos{\left(x \right)}\]</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -919,7 +957,8 @@ In [1]:
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/12-symbolic-computation_56_0.png" src="_images/12-symbolic-computation_56_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle e^{- \frac{x^{2}}{2}}\]</div>
 </div>
 </div>
 <p>We can calculate definite integrals by providing <code class="docutils literal notranslate"><span class="pre">integrate()</span></code> with a tuple containing the variable of interest, the lower and the upper bounds. If several variables are specified, multiple integration is performed. When SymPy returns a result in the <code class="docutils literal notranslate"><span class="pre">Rational</span></code> class, it is possible to evaluate it to a floating-point representation at any desired precision (see <a class="reference external" href="#Numeric-types">numeric types</a>).</p>
@@ -930,7 +969,8 @@ In [1]:
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/12-symbolic-computation_58_0.png" src="_images/12-symbolic-computation_58_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle 1\]</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -940,7 +980,8 @@ In [1]:
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/12-symbolic-computation_59_0.png" src="_images/12-symbolic-computation_59_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle \frac{x^{3}}{3}\]</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -950,7 +991,8 @@ In [1]:
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/12-symbolic-computation_60_0.png" src="_images/12-symbolic-computation_60_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle \frac{x^{4}}{12}\]</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -960,7 +1002,8 @@ In [1]:
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/12-symbolic-computation_61_0.png" src="_images/12-symbolic-computation_61_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle \frac{x^{4} y}{12}\]</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -970,7 +1013,8 @@ In [1]:
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/12-symbolic-computation_62_0.png" src="_images/12-symbolic-computation_62_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle \frac{8}{3}\]</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -980,7 +1024,8 @@ In [1]:
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/12-symbolic-computation_63_0.png" src="_images/12-symbolic-computation_63_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle \frac{16}{3}\]</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -990,7 +1035,8 @@ In [1]:
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/12-symbolic-computation_64_0.png" src="_images/12-symbolic-computation_64_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle 2.6666666666666665\]</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -1013,7 +1059,8 @@ In [1]:
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/12-symbolic-computation_66_0.png" src="_images/12-symbolic-computation_66_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle 2.66666666666667\]</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -1023,7 +1070,8 @@ In [1]:
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/12-symbolic-computation_67_0.png" src="_images/12-symbolic-computation_67_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle 2.6666666666666666666666666666666666666666666666667\]</div>
 </div>
 </div>
 </div>
@@ -1042,7 +1090,8 @@ In [1]:
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/12-symbolic-computation_69_0.png" src="_images/12-symbolic-computation_69_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle y{\left(x \right)} = C_{1} e^{- 5 x}\]</div>
 </div>
 </div>
 <p>Note how <code class="docutils literal notranslate"><span class="pre">dsolve</span></code> has introduced a constant of integration, <code class="docutils literal notranslate"><span class="pre">C1</span></code>. It will introduce as many constants as are required, and they will all be named <code class="docutils literal notranslate"><span class="pre">Cn</span></code>, where <code class="docutils literal notranslate"><span class="pre">n</span></code> is an integer. Note also that the first argument to <code class="docutils literal notranslate"><span class="pre">dsolve</span></code> is taken to be equal to zero unless we use the <code class="docutils literal notranslate"><span class="pre">Eq()</span></code> function to specify otherwise:</p>
@@ -1053,7 +1102,8 @@ In [1]:
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/12-symbolic-computation_71_0.png" src="_images/12-symbolic-computation_71_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle y{\left(x \right)} = C_{1} e^{- 5 x}\]</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -1063,7 +1113,8 @@ In [1]:
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/12-symbolic-computation_72_0.png" src="_images/12-symbolic-computation_72_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle y{\left(x \right)} = C_{1} e^{- 5 x}\]</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -1073,7 +1124,8 @@ In [1]:
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/12-symbolic-computation_73_0.png" src="_images/12-symbolic-computation_73_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle y{\left(x \right)} = \frac{C_{1} e^{- 5 x}}{5} + \frac{12}{5}\]</div>
 </div>
 </div>
 <p>The results from <code class="docutils literal notranslate"><span class="pre">dsolve</span></code> are an instance of the <code class="docutils literal notranslate"><span class="pre">Equality</span></code> class. This has consequences when we wish to numerically evaluate the function and use the result elsewhere (<em>e.g.</em> if we wanted to plot <em>y</em>(<em>x</em>) against <em>x</em>), because even after using <code class="docutils literal notranslate"><span class="pre">subs()</span></code> and <code class="docutils literal notranslate"><span class="pre">evalf()</span></code>, we still have an <code class="docutils literal notranslate"><span class="pre">Equality</span></code>, not any sort of scalar. The way to evaluate the function to a number is via the <code class="docutils literal notranslate"><span class="pre">rhs</span></code> attribute of the <code class="docutils literal notranslate"><span class="pre">Equality</span></code>.</p>
@@ -1086,7 +1138,8 @@ In [1]:
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/12-symbolic-computation_75_0.png" src="_images/12-symbolic-computation_75_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle y{\left(x \right)} = C_{1} e^{- 5 x}\]</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -1108,7 +1161,8 @@ In [1]:
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/12-symbolic-computation_77_0.png" src="_images/12-symbolic-computation_77_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle C_{1} e^{- 5 x}\]</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -1120,7 +1174,8 @@ In [1]:
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/12-symbolic-computation_78_0.png" src="_images/12-symbolic-computation_78_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle y{\left(3 \right)} = \frac{2}{e^{15}}\]</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -1130,7 +1185,8 @@ In [1]:
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/12-symbolic-computation_79_0.png" src="_images/12-symbolic-computation_79_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle y{\left(3 \right)} = 6.11804641 \cdot 10^{-7}\]</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -1140,7 +1196,8 @@ In [1]:
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/12-symbolic-computation_80_0.png" src="_images/12-symbolic-computation_80_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle \frac{2}{e^{15}}\]</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -1150,7 +1207,8 @@ In [1]:
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/12-symbolic-computation_81_0.png" src="_images/12-symbolic-computation_81_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle 6.11804641 \cdot 10^{-7}\]</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -1160,7 +1218,8 @@ In [1]:
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/12-symbolic-computation_82_0.png" src="_images/12-symbolic-computation_82_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle 4.122307245 \cdot 10^{-9}\]</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -1170,7 +1229,8 @@ In [1]:
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/12-symbolic-computation_83_0.png" src="_images/12-symbolic-computation_83_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle 2.777588773 \cdot 10^{-11}\]</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -1196,7 +1256,8 @@ In [1]:
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/12-symbolic-computation_86_0.png" src="_images/12-symbolic-computation_86_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle f{\left(x \right)} = C_{1} e^{- i a^{2} x} + C_{2} e^{i a^{2} x}\]</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -1207,7 +1268,8 @@ In [1]:
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/12-symbolic-computation_87_0.png" src="_images/12-symbolic-computation_87_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle f{\left(x \right)} = C_{1} \sin{\left(a^{2} x \right)} + C_{2} \cos{\left(a^{2} x \right)}\]</div>
 </div>
 </div>
 </div>
@@ -1223,7 +1285,8 @@ In [1]:
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/12-symbolic-computation_89_0.png" src="_images/12-symbolic-computation_89_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle x - \frac{x^{3}}{6} + \frac{x^{5}}{120} + O\left(x^{6}\right)\]</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -1233,7 +1296,8 @@ In [1]:
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/12-symbolic-computation_90_0.png" src="_images/12-symbolic-computation_90_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle x - \frac{x^{3}}{6} + \frac{x^{5}}{120} + O\left(x^{6}\right)\]</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -1244,7 +1308,8 @@ In [1]:
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/12-symbolic-computation_91_0.png" src="_images/12-symbolic-computation_91_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle 1.11729533119247 - 0.438791280945186 \left(x - 0.5\right)^{2} + 0.0799042564340338 \left(x - 0.5\right)^{3} + 0.0365659400787655 \left(x - 0.5\right)^{4} - 0.00399521282170169 \left(x - 0.5\right)^{5} - 0.00121886466929218 \left(x - 0.5\right)^{6} + 9.51241148024212 \cdot 10^{-5} \left(x - 0.5\right)^{7} + 2.17654405230747 \cdot 10^{-5} \left(x - 0.5\right)^{8} - 1.32116826114474 \cdot 10^{-6} \left(x - 0.5\right)^{9} - 0.479425538604203 x + O\left(\left(x - 0.5\right)^{10}; x\rightarrow 0.5\right)\]</div>
 </div>
 </div>
 <p>In some cases, especially for numerical evaluation and plotting the results, it is necessary to remove the trailing <code class="docutils literal notranslate"><span class="pre">O(n)</span></code> term:</p>
@@ -1256,7 +1321,8 @@ In [1]:
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/12-symbolic-computation_93_0.png" src="_images/12-symbolic-computation_93_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle - 0.479425538604203 x - 1.32116826114474 \cdot 10^{-6} \left(x - 0.5\right)^{9} + 2.17654405230747 \cdot 10^{-5} \left(x - 0.5\right)^{8} + 9.51241148024212 \cdot 10^{-5} \left(x - 0.5\right)^{7} - 0.00121886466929218 \left(x - 0.5\right)^{6} - 0.00399521282170169 \left(x - 0.5\right)^{5} + 0.0365659400787655 \left(x - 0.5\right)^{4} + 0.0799042564340338 \left(x - 0.5\right)^{3} - 0.438791280945186 \left(x - 0.5\right)^{2} + 1.11729533119247\]</div>
 </div>
 </div>
 <p>SymPy provides two inbuilt plotting functions, <code class="docutils literal notranslate"><span class="pre">Plot()</span></code> from the <code class="docutils literal notranslate"><span class="pre">sympy.plotting</span></code> module, and <code class="docutils literal notranslate"><span class="pre">plot</span></code> from <code class="docutils literal notranslate"><span class="pre">sympy.mpmath.visualization</span></code>. At the time of writing, these functions lack the ability to add a key to the plot, which means they are unsuitable for most of our needs. Should you wish to use them nevertheless, their <code class="docutils literal notranslate"><span class="pre">help()</span></code> text is useful.</p>
@@ -1314,7 +1380,7 @@ In [1]:
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7f568b356a00&gt;
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7fd4cf8ee4f0&gt;
 </pre></div>
 </div>
 <img alt="_images/12-symbolic-computation_97_1.png" src="_images/12-symbolic-computation_97_1.png" />
@@ -1441,7 +1507,8 @@ y \end{array}\right),\qquad
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/12-symbolic-computation_107_0.png" src="_images/12-symbolic-computation_107_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle \left\{ x : \frac{59 z}{34}, \  y : \frac{33 z}{34}\right\}\]</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -1481,7 +1548,8 @@ y = 3.203
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/12-symbolic-computation_111_0.png" src="_images/12-symbolic-computation_111_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle \left\{ x : \frac{59 z}{34}, \  y : \frac{33 z}{34}\right\}\]</div>
 </div>
 </div>
 <div class="cell docutils container">
@@ -1491,7 +1559,8 @@ y = 3.203
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/12-symbolic-computation_112_0.png" src="_images/12-symbolic-computation_112_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle \left\{ x : \frac{59 z}{34}, \  y : \frac{33 z}{34}\right\}\]</div>
 </div>
 </div>
 <p>For more information, see <code class="docutils literal notranslate"><span class="pre">help(solve)</span></code> and <code class="docutils literal notranslate"><span class="pre">help(solve_linear_system)</span></code>.</p>
@@ -1516,7 +1585,8 @@ y = 3.203
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/12-symbolic-computation_115_0.png" src="_images/12-symbolic-computation_115_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle \left[ 0, \  1\right]\]</div>
 </div>
 </div>
 <p>The <code class="docutils literal notranslate"><span class="pre">solve()</span></code> function expects an expression that as meant to be solve so that it evaluates to zero. For our example, we rewrite</p>
@@ -1535,7 +1605,8 @@ and solve</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/12-symbolic-computation_117_0.png" src="_images/12-symbolic-computation_117_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle \left[ -1, \  0, \  1\right]\]</div>
 </div>
 </div>
 </div>
@@ -1602,7 +1673,8 @@ and solve</p>
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/12-symbolic-computation_124_0.png" src="_images/12-symbolic-computation_124_0.png" />
+<div class="output text_latex math notranslate nohighlight">
+\[\displaystyle x - \frac{x^{3}}{6} + \frac{x^{5}}{120} + O\left(x^{6}\right)\]</div>
 </div>
 </div>
 <div class="cell docutils container">

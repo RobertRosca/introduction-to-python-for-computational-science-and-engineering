@@ -339,33 +339,28 @@ commentsRunWhenDOMLoaded(addUtterances);
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#further-information">
-     3.2.1. Further information
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#integers">
-     3.2.2. Integers
+     3.2.1. Integers
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#integer-limits">
-     3.2.3. Integer limits
+     3.2.2. Integer limits
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#floating-point-numbers">
-     3.2.4. Floating Point numbers
+     3.2.3. Floating Point numbers
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#complex-numbers">
-     3.2.5. Complex numbers
+     3.2.4. Complex numbers
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#functions-applicable-to-all-types-of-numbers">
-     3.2.6. Functions applicable to all types of numbers
+     3.2.5. Functions applicable to all types of numbers
     </a>
    </li>
   </ul>
@@ -379,13 +374,6 @@ commentsRunWhenDOMLoaded(addUtterances);
     <a class="reference internal nav-link" href="#sequence-type-1-string">
      3.3.1. Sequence type 1: String
     </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id1">
-       3.3.1.1. Further information
-      </a>
-     </li>
-    </ul>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#sequence-type-2-list">
@@ -393,13 +381,8 @@ commentsRunWhenDOMLoaded(addUtterances);
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id2">
-       3.3.2.1. Further information
-      </a>
-     </li>
-     <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#the-range-command">
-       3.3.2.2. The range() command
+       3.3.2.1. The range() command
       </a>
      </li>
     </ul>
@@ -413,25 +396,11 @@ commentsRunWhenDOMLoaded(addUtterances);
     <a class="reference internal nav-link" href="#indexing-sequences">
      3.3.4. Indexing sequences
     </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id3">
-       3.3.4.1. Further information
-      </a>
-     </li>
-    </ul>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#slicing-sequences">
      3.3.5. Slicing sequences
     </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id4">
-       3.3.5.1. Further information
-      </a>
-     </li>
-    </ul>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#dictionaries">
@@ -570,17 +539,15 @@ commentsRunWhenDOMLoaded(addUtterances);
 </div>
 <div class="section" id="numbers">
 <h2><span class="section-number">3.2. </span>Numbers<a class="headerlink" href="#numbers" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="further-information">
-<h3><span class="section-number">3.2.1. </span>Further information<a class="headerlink" href="#further-information" title="Permalink to this headline">¶</a></h3>
+<p><strong>Further information</strong></p>
 <ul class="simple">
 <li><p>Informal introduction to numbers. <a class="reference external" href="http://docs.python.org/tutorial/introduction.html#using-python-as-a-calculator">Python tutorial, section 3.1.1</a></p></li>
 <li><p>Python Library Reference: formal overview of numeric types, <a class="reference external" href="http://docs.python.org/library/stdtypes.html#numeric-types-int-float-long-complex">http://docs.python.org/library/stdtypes.html#numeric-types-int-float-long-complex</a></p></li>
 <li><p>Think Python, <a class="reference external" href="http://www.greenteapress.com/thinkpython/html/book003.html">Sec 2.1</a></p></li>
 </ul>
 <p>The in-built numerical types are integers and floating point numbers (see <a class="reference external" href="#Floating-Point-numbers">floating point numbers</a>) and complex floating point numbers (<a class="reference external" href="#Complex-numbers">complex numbers</a>).</p>
-</div>
 <div class="section" id="integers">
-<h3><span class="section-number">3.2.2. </span>Integers<a class="headerlink" href="#integers" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">3.2.1. </span>Integers<a class="headerlink" href="#integers" title="Permalink to this headline">¶</a></h3>
 <p>We have seen the use of integer numbers already in <a class="reference internal" href="02-powerful-calculator.html"><span class="doc std std-doc">Chapter 2</span></a>. Be aware of integer division problems (<a class="reference external" href="02-powerful-calculator.ipynb#Integer-division">integer division</a>).</p>
 <p>If we need to convert string containing an integer number to an integer we can use <code class="docutils literal notranslate"><span class="pre">int()</span></code> function:</p>
 <div class="cell docutils container">
@@ -631,7 +598,7 @@ commentsRunWhenDOMLoaded(addUtterances);
 </div>
 </div>
 <div class="section" id="integer-limits">
-<h3><span class="section-number">3.2.3. </span>Integer limits<a class="headerlink" href="#integer-limits" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">3.2.2. </span>Integer limits<a class="headerlink" href="#integer-limits" title="Permalink to this headline">¶</a></h3>
 <p>Integers in Python 3 are unlimited; Python will automatically assign more memory as needed as the numbers get bigger. This means we can calculate very large numbers with no special steps.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -654,7 +621,7 @@ commentsRunWhenDOMLoaded(addUtterances);
 </ul>
 </div>
 <div class="section" id="floating-point-numbers">
-<h3><span class="section-number">3.2.4. </span>Floating Point numbers<a class="headerlink" href="#floating-point-numbers" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">3.2.3. </span>Floating Point numbers<a class="headerlink" href="#floating-point-numbers" title="Permalink to this headline">¶</a></h3>
 <p>A string containing a floating point number can be converted into a floating point number using the <code class="docutils literal notranslate"><span class="pre">float()</span></code> command:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -684,7 +651,7 @@ commentsRunWhenDOMLoaded(addUtterances);
 </div>
 </div>
 <div class="section" id="complex-numbers">
-<h3><span class="section-number">3.2.5. </span>Complex numbers<a class="headerlink" href="#complex-numbers" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">3.2.4. </span>Complex numbers<a class="headerlink" href="#complex-numbers" title="Permalink to this headline">¶</a></h3>
 <p>Python (as Fortran and Matlab) has built-in complex numbers. Here are some examples how to use these:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -787,7 +754,7 @@ commentsRunWhenDOMLoaded(addUtterances);
 </div>
 </div>
 <div class="section" id="functions-applicable-to-all-types-of-numbers">
-<h3><span class="section-number">3.2.6. </span>Functions applicable to all types of numbers<a class="headerlink" href="#functions-applicable-to-all-types-of-numbers" title="Permalink to this headline">¶</a></h3>
+<h3><span class="section-number">3.2.5. </span>Functions applicable to all types of numbers<a class="headerlink" href="#functions-applicable-to-all-types-of-numbers" title="Permalink to this headline">¶</a></h3>
 <p>The <code class="docutils literal notranslate"><span class="pre">abs()</span></code> function returns the absolute value of a number (also called modulus):</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -822,8 +789,7 @@ commentsRunWhenDOMLoaded(addUtterances);
 </ul>
 <div class="section" id="sequence-type-1-string">
 <h3><span class="section-number">3.3.1. </span>Sequence type 1: String<a class="headerlink" href="#sequence-type-1-string" title="Permalink to this headline">¶</a></h3>
-<div class="section" id="id1">
-<h4><span class="section-number">3.3.1.1. </span>Further information<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h4>
+<p><strong>Further information</strong></p>
 <ul class="simple">
 <li><p>Introduction to strings, <a class="reference external" href="http://docs.python.org/tutorial/introduction.html#strings">Python tutorial 3.1.2</a></p></li>
 </ul>
@@ -1039,11 +1005,9 @@ commentsRunWhenDOMLoaded(addUtterances);
 </div>
 </div>
 </div>
-</div>
 <div class="section" id="sequence-type-2-list">
 <h3><span class="section-number">3.3.2. </span>Sequence type 2: List<a class="headerlink" href="#sequence-type-2-list" title="Permalink to this headline">¶</a></h3>
-<div class="section" id="id2">
-<h4><span class="section-number">3.3.2.1. </span>Further information<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h4>
+<p><strong>Further information</strong></p>
 <ul class="simple">
 <li><p>Introduction to Lists, <a class="reference external" href="http://docs.python.org/tutorial/introduction.html#lists">Python tutorial, section 3.1.4</a></p></li>
 </ul>
@@ -1169,9 +1133,8 @@ commentsRunWhenDOMLoaded(addUtterances);
 </div>
 </div>
 </div>
-</div>
 <div class="section" id="the-range-command">
-<h4><span class="section-number">3.3.2.2. </span>The range() command<a class="headerlink" href="#the-range-command" title="Permalink to this headline">¶</a></h4>
+<h4><span class="section-number">3.3.2.1. </span>The range() command<a class="headerlink" href="#the-range-command" title="Permalink to this headline">¶</a></h4>
 <p>A special type of list is frequently required (often together with <code class="docutils literal notranslate"><span class="pre">for-loops</span></code>) and therefor a command exists to generate that list: the <code class="docutils literal notranslate"><span class="pre">range(n)</span></code> command generates integers starting from 0 and going up to <em>but not including</em> n. Here are a few examples:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1465,8 +1428,7 @@ commentsRunWhenDOMLoaded(addUtterances);
 </div>
 <div class="section" id="indexing-sequences">
 <h3><span class="section-number">3.3.4. </span>Indexing sequences<a class="headerlink" href="#indexing-sequences" title="Permalink to this headline">¶</a></h3>
-<div class="section" id="id3">
-<h4><span class="section-number">3.3.4.1. </span>Further information<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h4>
+<p><strong>Further information</strong></p>
 <ul class="simple">
 <li><p>Introduction to strings and indexing in <a class="reference external" href="http://docs.python.org/tutorial/introduction.html#strings">Python tutorial, section 3.1.2</a>, the relevant section is starting after strings have been introduced.</p></li>
 </ul>
@@ -1599,11 +1561,9 @@ commentsRunWhenDOMLoaded(addUtterances);
 </div>
 </div>
 </div>
-</div>
 <div class="section" id="slicing-sequences">
 <h3><span class="section-number">3.3.5. </span>Slicing sequences<a class="headerlink" href="#slicing-sequences" title="Permalink to this headline">¶</a></h3>
-<div class="section" id="id4">
-<h4><span class="section-number">3.3.5.1. </span>Further information<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h4>
+<p><strong>Further information</strong></p>
 <ul class="simple">
 <li><p>Introduction to strings, indexing and slicing in <a class="reference external" href="http://docs.python.org/tutorial/introduction.html#strings">Python tutorial, section 3.1.2</a></p></li>
 </ul>
@@ -1747,7 +1707,6 @@ commentsRunWhenDOMLoaded(addUtterances);
 </pre></div>
 </div>
 <p>If you are not sure what the right index is, it is always a good technique to play around with a small example at the Python prompt to test things before or while you write your program.</p>
-</div>
 </div>
 <div class="section" id="dictionaries">
 <h3><span class="section-number">3.3.6. </span>Dictionaries<a class="headerlink" href="#dictionaries" title="Permalink to this headline">¶</a></h3>
@@ -2242,7 +2201,7 @@ in main after calling mymax(s): s=[-45, 3, 6, 6, 6]
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>140085395839424
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>140486257420224
 </pre></div>
 </div>
 </div>
@@ -2255,7 +2214,7 @@ in main after calling mymax(s): s=[-45, 3, 6, 6, 6]
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>140085395839424
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>140486257420224
 </pre></div>
 </div>
 </div>
@@ -2269,7 +2228,7 @@ in main after calling mymax(s): s=[-45, 3, 6, 6, 6]
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>140085399390720
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>140486369620096
 </pre></div>
 </div>
 </div>
@@ -2360,7 +2319,7 @@ in main after calling mymax(s): s=[-45, 3, 6, 6, 6]
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>140085396325168
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>140486257877968
 </pre></div>
 </div>
 </div>
@@ -2373,7 +2332,7 @@ in main after calling mymax(s): s=[-45, 3, 6, 6, 6]
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>140085608894752
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>140486571188512
 </pre></div>
 </div>
 </div>
@@ -2417,7 +2376,7 @@ in main after calling mymax(s): s=[-45, 3, 6, 6, 6]
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>140085398886912
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>140486369688320
 </pre></div>
 </div>
 </div>
@@ -2430,7 +2389,7 @@ in main after calling mymax(s): s=[-45, 3, 6, 6, 6]
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>140085398886912
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>140486369688320
 </pre></div>
 </div>
 </div>
@@ -2544,7 +2503,7 @@ in main after calling mymax(s): s=[-45, 3, 6, 6, 6]
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>140085398904192
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>140486369856576
 </pre></div>
 </div>
 </div>
@@ -2557,7 +2516,7 @@ in main after calling mymax(s): s=[-45, 3, 6, 6, 6]
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>140085398886912
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>140486369688320
 </pre></div>
 </div>
 </div>
