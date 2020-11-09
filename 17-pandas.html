@@ -764,8 +764,16 @@ dtype: int64
 <p>We can plot the data as a bar chart:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
-<span class="n">stock</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;bar&#39;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">set_matplotlib_formats</span>
+<span class="o">%</span><span class="k">matplotlib</span> inline
+<span class="n">set_matplotlib_formats</span><span class="p">(</span><span class="s1">&#39;svg&#39;</span><span class="p">)</span>       <span class="c1"># change the format to SVG</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">stock</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;bar&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -773,8 +781,7 @@ dtype: int64
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;AxesSubplot:&gt;
 </pre></div>
 </div>
-<img alt="_images/17-pandas_41_1.png" src="_images/17-pandas_41_1.png" />
-</div>
+<img alt="_images/17-pandas_42_1.svg" src="_images/17-pandas_42_1.svg" /></div>
 </div>
 <p>We can sort the data according to the values in the Series (and then plot to visualise):</p>
 <div class="cell docutils container">
@@ -787,8 +794,7 @@ dtype: int64
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;AxesSubplot:&gt;
 </pre></div>
 </div>
-<img alt="_images/17-pandas_43_1.png" src="_images/17-pandas_43_1.png" />
-</div>
+<img alt="_images/17-pandas_44_1.svg" src="_images/17-pandas_44_1.svg" /></div>
 </div>
 <p>Or sort the index to get alphabetical order of our fruit and vegetables:</p>
 <div class="cell docutils container">
@@ -801,8 +807,7 @@ dtype: int64
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;AxesSubplot:&gt;
 </pre></div>
 </div>
-<img alt="_images/17-pandas_45_1.png" src="_images/17-pandas_45_1.png" />
-</div>
+<img alt="_images/17-pandas_46_1.svg" src="_images/17-pandas_46_1.svg" /></div>
 </div>
 <p>The <code class="docutils literal notranslate"><span class="pre">Series</span></code> object has a number of numerical methods available, including <code class="docutils literal notranslate"><span class="pre">mean</span></code> and <code class="docutils literal notranslate"><span class="pre">sum</span></code>:</p>
 <div class="cell docutils container">
@@ -1011,8 +1016,7 @@ dtype: int64
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;AxesSubplot:ylabel=&#39;None&#39;&gt;
 </pre></div>
 </div>
-<img alt="_images/17-pandas_75_1.png" src="_images/17-pandas_75_1.png" />
-</div>
+<img alt="_images/17-pandas_76_1.svg" src="_images/17-pandas_76_1.svg" /></div>
 </div>
 <p>To tailor the plot, we can either get the axis object and modify it subsequently:</p>
 <div class="cell docutils container">
@@ -1025,8 +1029,7 @@ dtype: int64
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/17-pandas_77_0.png" src="_images/17-pandas_77_0.png" />
-</div>
+<img alt="_images/17-pandas_78_0.svg" src="_images/17-pandas_78_0.svg" /></div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1038,8 +1041,7 @@ dtype: int64
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/17-pandas_78_0.png" src="_images/17-pandas_78_0.png" />
-</div>
+<img alt="_images/17-pandas_79_0.svg" src="_images/17-pandas_79_0.svg" /></div>
 </div>
 <p>We can also fetch the data from the series and drive the plotting “manually” ourselves:</p>
 <div class="cell docutils container">
@@ -1056,8 +1058,7 @@ dtype: int64
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/17-pandas_80_0.png" src="_images/17-pandas_80_0.png" />
-</div>
+<img alt="_images/17-pandas_81_0.svg" src="_images/17-pandas_81_0.svg" /></div>
 </div>
 </div>
 <div class="section" id="missing-values">
@@ -2001,9 +2002,9 @@ Name: apple, dtype: float64
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>--2020-11-06 16:22:21--  https://fangohr.github.io/data/eurostat/population2017/eu-pop-2017.csv
-Resolving fangohr.github.io (fangohr.github.io)... 185.199.109.153, 185.199.111.153, 185.199.110.153, ...
-Connecting to fangohr.github.io (fangohr.github.io)|185.199.109.153|:443... connected.
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>--2020-11-09 10:35:56--  https://fangohr.github.io/data/eurostat/population2017/eu-pop-2017.csv
+Resolving fangohr.github.io (fangohr.github.io)... 185.199.108.153, 185.199.109.153, 185.199.110.153, ...
+Connecting to fangohr.github.io (fangohr.github.io)|185.199.108.153|:443... connected.
 HTTP request sent, awaiting response... 
 </pre></div>
 </div>
@@ -2015,7 +2016,7 @@ Saving to: ‘eu-pop-2017.csv’
 eu-pop-2017.csv       0%[                    ]       0  --.-KB/s               
 eu-pop-2017.csv     100%[===================&gt;]   1.06K  --.-KB/s    in 0s      
 
-2020-11-06 16:22:21 (62.8 MB/s) - ‘eu-pop-2017.csv’ saved [1087/1087]
+2020-11-09 10:35:56 (41.0 MB/s) - ‘eu-pop-2017.csv’ saved [1087/1087]
 </pre></div>
 </div>
 </div>
@@ -2584,8 +2585,7 @@ Spain,46527039,46659302,390024,421269
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;AxesSubplot:xlabel=&#39;geo&#39;&gt;
 </pre></div>
 </div>
-<img alt="_images/17-pandas_178_1.png" src="_images/17-pandas_178_1.png" />
-</div>
+<img alt="_images/17-pandas_179_1.svg" src="_images/17-pandas_179_1.svg" /></div>
 </div>
 <p>The above shows the population as of 1 Jan 2017.</p>
 <p>We’ll try to improve this in two ways:</p>
@@ -2610,8 +2610,7 @@ Spain,46527039,46659302,390024,421269
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;AxesSubplot:xlabel=&#39;geo&#39;&gt;
 </pre></div>
 </div>
-<img alt="_images/17-pandas_181_1.png" src="_images/17-pandas_181_1.png" />
-</div>
+<img alt="_images/17-pandas_182_1.svg" src="_images/17-pandas_182_1.svg" /></div>
 </div>
 <p>The example above selects one column from the data frame (<code class="docutils literal notranslate"><span class="pre">['pop17'</span></code>) and that returns a <code class="docutils literal notranslate"><span class="pre">Series</span></code> object. Then we sort this <code class="docutils literal notranslate"><span class="pre">Series</span></code> object using <code class="docutils literal notranslate"><span class="pre">sort_values()</span></code> according to the values (that’s the number of poeple in each country), then we plot this.</p>
 <p>Alternatively, we could also create a plot for the whole data frame, but say that the <code class="docutils literal notranslate"><span class="pre">pop17</span></code> is the column for sorting, and that we want to plot only the column with <code class="docutils literal notranslate"><span class="pre">pop17</span></code>:</p>
@@ -2625,8 +2624,7 @@ Spain,46527039,46659302,390024,421269
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;AxesSubplot:xlabel=&#39;geo&#39;&gt;
 </pre></div>
 </div>
-<img alt="_images/17-pandas_184_1.png" src="_images/17-pandas_184_1.png" />
-</div>
+<img alt="_images/17-pandas_185_1.svg" src="_images/17-pandas_185_1.svg" /></div>
 </div>
 <p>We can also plot more than one column at the same time:</p>
 <div class="cell docutils container">
@@ -2636,8 +2634,7 @@ Spain,46527039,46659302,390024,421269
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/17-pandas_186_0.png" src="_images/17-pandas_186_0.png" />
-</div>
+<img alt="_images/17-pandas_187_0.svg" src="_images/17-pandas_187_0.svg" /></div>
 </div>
 <p>We can also fine tune the plot with the usual <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code> commands:</p>
 <div class="cell docutils container">
@@ -2650,8 +2647,7 @@ Spain,46527039,46659302,390024,421269
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/17-pandas_188_0.png" src="_images/17-pandas_188_0.png" />
-</div>
+<img alt="_images/17-pandas_189_0.svg" src="_images/17-pandas_189_0.svg" /></div>
 </div>
 <p>Based on the number of births and deaths, we can compute change in population for each country for 2017. This is sometimes called the “natural-change”:</p>
 <div class="cell docutils container">
@@ -2829,8 +2825,7 @@ Name: natural-change, dtype: int64
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/17-pandas_197_0.png" src="_images/17-pandas_197_0.png" />
-</div>
+<img alt="_images/17-pandas_198_0.svg" src="_images/17-pandas_198_0.svg" /></div>
 </div>
 <p>We can show the data together with the underlying birth and death rate data:</p>
 <div class="cell docutils container">
@@ -2849,8 +2844,7 @@ Name: natural-change, dtype: int64
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;AxesSubplot:xlabel=&#39;geo&#39;&gt;
 </pre></div>
 </div>
-<img alt="_images/17-pandas_199_1.png" src="_images/17-pandas_199_1.png" />
-</div>
+<img alt="_images/17-pandas_200_1.svg" src="_images/17-pandas_200_1.svg" /></div>
 </div>
 <p>We haven’t used the information we have about the population on 1 January 2018 yet.</p>
 <p>Let’s first look at the absolute changes in the population based on the (census?) data from 1 Jan 2017 and 1 Jan 2018:</p>
@@ -2869,8 +2863,7 @@ Name: natural-change, dtype: int64
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/17-pandas_202_0.png" src="_images/17-pandas_202_0.png" />
-</div>
+<img alt="_images/17-pandas_203_0.svg" src="_images/17-pandas_203_0.svg" /></div>
 </div>
 <p>With that information, we can estimate migration. (It is important to note that this estimated number will also absorb all inaccuracies or changes of the data gathering method, in the original data described as “statistical adjustment”.)</p>
 <div class="cell docutils container">
@@ -3016,8 +3009,7 @@ Name: natural-change, dtype: int64
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/17-pandas_207_0.png" src="_images/17-pandas_207_0.png" />
-</div>
+<img alt="_images/17-pandas_208_0.svg" src="_images/17-pandas_208_0.svg" /></div>
 </div>
 </div>
 <div class="section" id="further-reading">
